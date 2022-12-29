@@ -1,0 +1,37 @@
+<mvc:View controllerName="sample.SVMFilterBar.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:svmFilterBar="sample.SVMFilterBar.control.SVMFilterBar" xmlns:fb="sap.ui.comp.filterbar" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<svmFilterBar:SVMFilterBar id="filterBar" persistencyKey="sample.SVMFilterBar.First.FilterBar" showFilterConfiguration="true"
+							search="onSearch">
+							<svmFilterBar:filterItems>
+								<fb:FilterItem name="name" label="{i18n>name}" visibleInFilterBar="{filterModel>/name/visibleInFB}">
+									<fb:control>
+										<Input id="name" value="{filterModel>/name/value}" valueLiveUpdate="true"/>
+									</fb:control>
+								</fb:FilterItem>
+								<fb:FilterItem name="classification" label="{i18n>classification}" visibleInFilterBar="{filterModel>/classification/visibleInFB}">
+									<fb:control>
+										<MultiComboBox id="classification" selectedKeys="{filterModel>/classification/selectedKeys}">
+											<core:Item key="A" text="{i18n>aCustomer}"/>
+											<core:Item key="B" text="{i18n>bCustomer}"/>
+											<core:Item key="C" text="{i18n>cCustomer}"/>
+										</MultiComboBox>
+									</fb:control>
+								</fb:FilterItem>
+								<fb:FilterItem name="createdAt" label="{i18n>createdAt}" visibleInFilterBar="{filterModel>/createdAt/visibleInFB}">
+									<fb:control>
+										<DatePicker id="createdAt" dateValue="{filterModel>/createdAt/value}"/>
+									</fb:control>
+								</fb:FilterItem>
+							</svmFilterBar:filterItems>
+						</svmFilterBar:SVMFilterBar>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
