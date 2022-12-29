@@ -5,10 +5,11 @@ sap.ui.define([
 ], function (FilterBar, PersonalizableInfo, SmartVariantManagement) {
 	"use strict";
 
-	/**
+	 /**
 	 * @class SVMFilterBar
 	 * @classdesc
 	 * Standard sap.ui.comp.filterbar.FilterBar with *built-in* SmartVariantManagement
+	 * coding copyed from {@link https://blogs.sap.com/2020/07/20/sapui5-filterbar-with-smartvariantmanagement/|Alex Necula}
 	 * @augments sap.ui.comp.filterbar.FilterBar
 	 */
 
