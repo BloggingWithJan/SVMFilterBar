@@ -1,4 +1,4 @@
 # SVMFilterBar
 
 ## Infos
-https://bloggingwithjan.com/sap-ui-comp-filterbar-filterbar-with-smartvariantmanagement-functionality/
+https://janschulz.info/sap-ui5/sap-ui-comp-filterbar-filterbar-with-smartvariantmanagement-functionality/
